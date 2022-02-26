@@ -18,7 +18,7 @@
 </head>
 <body class="Back" >
     <a href="https://front.codes/" class="logo" target="_blank"></a>
-
+	<a href="#" class="Back">⇠ Regresar</a>
 
 	<div class="section">
 
@@ -63,6 +63,7 @@
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
 											<a href="#" class="boton">Enviar</a>
+											
 				      					</div>
 			      					</div>
 			      				</div>
