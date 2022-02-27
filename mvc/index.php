@@ -3,7 +3,8 @@
 	require_once "config/config.php";
 	require_once "core/routes.php";
 	require_once "config/database.php";
-	require_once "controllers/Alumnos.php";
+    require_once "controllers/Login.php";
+	require_once "controllers/Pedidos.php";
 	
 	if(isset($_GET['c'])){ //Verifica si existe el nombre del controlador
 		
@@ -16,7 +17,7 @@
 				cargarAccion($controlador, $_GET['a']); //Ejecuta acción
 			}
 			} else {
-			cargarAccion($controlador, ACCION_PRINCIPAL); //Cargar form predeterminado, alumnos.php
+			cargarAccion($controlador, ACCION_PRINCIPAL); //Cargar form predeterminado
 		}
 		
 		} else {

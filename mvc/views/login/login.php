@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../assets/css/estilos.css">
-    <title>Inicio/Resgistro</title>
+    <!--<link rel="stylesheet" href="assets/css/estilos.css">-->
+	<style>
+  		<?php include "assets/css/estilos.css" ?>
+	</style>
+
+    <title>Inicio/Registro</title>
+	
 	<meta name="robots" content="noindex">
 	<link  rel="icon"   href="https://imgur.com/Zdbcigj.png" type="image/png" />
 	<link rel="canonical" href="https://codepen.io/ig_design/pen/KKVQpVP?editors=1111">
@@ -73,8 +78,5 @@
 	      	</div>
 	    </div>
 	</div>
-
-
-
 </body>
 </html>
