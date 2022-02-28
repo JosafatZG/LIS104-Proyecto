@@ -3,9 +3,7 @@
 	require_once "config/config.php";
 	require_once "core/routes.php";
 	require_once "config/database.php";
-    require_once "controllers/Login.php";
-	require_once "controllers/Pedidos.php";
-	
+
 	if(isset($_GET['c'])){ //Verifica si existe el nombre del controlador
 		
 		$controlador = cargarControlador($_GET['c']); //Carga el controlador Alumnos

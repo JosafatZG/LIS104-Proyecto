@@ -5,11 +5,6 @@
         }
 
         public function index(){
-
-			/*$alumnos = new Alumnos_model();
-			$data["titulo"] = "Alumnos";
-			$data["alumnos"] = $alumnos->get_alumnos();*/
-			
 			require_once "views/pedidos/inicio.php";
 		}
 
