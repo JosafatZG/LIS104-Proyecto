@@ -39,14 +39,14 @@
   	<?php endif ?>
 
     <!-- logged in user information -->
-            <?php  if (isset($_SESSION['username'])) : ?>
-    	    <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	    <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
-            <?php endif ?>
+    <?php  if (isset($_SESSION['username'])) : ?>
+    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+    <?php endif ?>
 
-             <header>
-            <img src="assets/images/logo.png" class="logo">
-            <form class="menu">
+    <header>
+        <img src="assets/images/logo.png" class="logo">
+        <form class="menu">
             <input type="button" id="inicio" name="inicio" value="Inicio" class="submit" onclick="location.href='?c=pedidos';" />
             <input type="button" id="categorias" name="categorias" value="Categorías" class="submit" onclick="location.href='?c=pedidos&a=viewcategorias';"/>
             <input type="button" id="login" name="login" value="Iniciar Sesión" class="submit" onclick="location.href='?c=login';"/>
