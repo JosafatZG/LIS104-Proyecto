@@ -53,6 +53,19 @@ CREATE TABLE IF NOT EXISTS `estado` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `categorias`
+--
+
+DROP TABLE IF EXISTS `categorias`;
+CREATE TABLE IF NOT EXISTS `categorias` (
+  `id` int(255) NOT NULL,
+  `nombre` varchar(255) COLLATE utf16_spanish_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `extras`
 --
 
@@ -110,9 +123,12 @@ DROP TABLE IF EXISTS `producto`;
 CREATE TABLE IF NOT EXISTS `producto` (
   `id` int(255) NOT NULL,
   `nombre` varchar(255) COLLATE utf16_spanish_ci NOT NULL,
-  `precio` decimal(65,2) NOT NULL,
+  `descripcion` TEXT COLLATE utf16_spanish_ci,
+  `precio` decimal(65,2) NOT NULL,  
+  `categoria` INT(255) NOT NULL,	
   `estado` int(255) NOT NULL,
   PRIMARY KEY (`id`),
+  KEY `categoria` (`categoria`),
   KEY `estado` (`estado`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
 
@@ -159,7 +175,8 @@ ALTER TABLE `pedido`
 -- Filtros para la tabla `producto`
 --
 ALTER TABLE `producto`
-  ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`estado`) REFERENCES `estado` (`id`);
+  ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`estado`) REFERENCES `estado` (`id`),
+  ADD CONSTRAINT `producto_ibfk_2` FOREIGN KEY (`categoria`) REFERENCES `categorias` (`id`);
 
 --
 -- Filtros para la tabla `productoxextras`

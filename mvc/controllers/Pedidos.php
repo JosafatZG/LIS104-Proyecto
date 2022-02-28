@@ -8,7 +8,17 @@
 			require_once "views/pedidos/inicio.php";
 		}
 
-        public function viewcategorias(){
+        public function viewcategorias($id = null){
+
+            $categorias = new Pedidos_model();
+
+            if(isset($id)){
+                $data["info"] = $categorias->get_productos($id);
+            }
+            else{
+                $data["info"] = $categorias->get_categorias();
+            }
+            
             require_once "views/pedidos/categorias.php";
         }
 
