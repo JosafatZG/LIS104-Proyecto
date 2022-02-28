@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 22-02-2022 a las 09:46:56
+-- Tiempo de generación: 23-02-2022 a las 07:16:00
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -77,8 +77,9 @@ CREATE TABLE IF NOT EXISTS `orden` (
   `id` int(255) NOT NULL,
   `producto` int(255) NOT NULL,
   `extras` int(255) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `extras` (`extras`)
+  KEY `orden_ibfk_1` (`id`),
+  KEY `orden_ibfk_2` (`producto`),
+  KEY `orden_ibfk_3` (`extras`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
 
 -- --------------------------------------------------------
@@ -143,7 +144,9 @@ ALTER TABLE `extras`
 -- Filtros para la tabla `orden`
 --
 ALTER TABLE `orden`
-  ADD CONSTRAINT `orden_ibfk_1` FOREIGN KEY (`extras`) REFERENCES `extras` (`id`);
+  ADD CONSTRAINT `orden_ibfk_1` FOREIGN KEY (`id`) REFERENCES `pedido` (`id`),
+  ADD CONSTRAINT `orden_ibfk_2` FOREIGN KEY (`producto`) REFERENCES `producto` (`id`),
+  ADD CONSTRAINT `orden_ibfk_3` FOREIGN KEY (`extras`) REFERENCES `extras` (`id`);
 
 --
 -- Filtros para la tabla `pedido`
