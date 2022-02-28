@@ -1,0 +1,131 @@
+.logo{
+    max-width: 7cm;
+    max-height: 4cm;
+}
+.submit{
+    background-color: #7B0D12;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.submit:hover{
+    background-color: #a72963;
+    cursor: pointer !important;
+}
+
+#inicio{
+    width: 100px;
+    height: 40px;
+    position: relative;
+    font-size:large;
+}
+
+#categorias{
+    width: 120px;
+    height: 40px;
+    margin: 0.5cm;
+    font-size: large;
+}
+#login{
+    width: 170px;
+    height: 40px;
+    font-size:large;
+    position:relative;
+    right:-175%;
+}
+.menu{
+    position: absolute;
+    top:5%;
+    left:13%;
+    align-items: center;
+}
+.carrito{
+    max-width: 2cm;
+    max-height: 2cm;
+    position: absolute;
+    top:13%;
+    right:-200%;
+}
+.carrito:hover{
+    background-color: blanchedalmond;
+
+}
+header{
+    background-color: rgb(201, 195, 187);
+    margin: 0px;
+    max-height: 300px;
+}
+*{
+    margin:0px;
+}
+body{
+    background-color: #7B0D12;
+}
+.pregunta{
+    font-size: 480%;
+    max-width: 20cm;
+    text-align: center;
+    color:rgb(241, 205, 160);
+    font-family: cursive;
+    font-weight: 800;
+}
+ .pedir{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    left:300px;
+    background: linear-gradient(65deg, orange, yellow);
+    border-radius: 30px;
+    font-weight: bold;
+    
+
+}
+.pedir:hover{
+    color: rgb(0, 0, 0) !important;
+    box-shadow: 0 4px 16px rgb(222, 235, 53);
+    /*transition: all 0.2s ease;*/
+}
+.bf{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.hamburguesa{
+    max-width: 17cm;
+    max-height: 12cm;
+    position: absolute;
+    right: 0%;
+}
+footer{
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.logoinsta{
+    margin-top: 0.2cm;
+    max-width: 3cm;
+    max-height: 1.5cm;
+    margin-left: 2cm;
+    margin-bottom: 0;
+}
+.instagram{
+    position: absolute;
+    top:40%;
+    left:10%;
+    font-family: arial;
+}
+/*.instagram1{
+    position: absolute;
+    top:55%;
+    left:12%;
+}*/
+.derechos{
+    position: absolute;
+    top:40%;
+    left:38%;
+    font-family: Arial;
+}
+
+
