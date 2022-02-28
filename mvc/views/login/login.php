@@ -1,3 +1,5 @@
+<?php $username = ""; $errors = array(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,40 +35,45 @@
 			          	<label for="reg-log"></label>
 						<div class="card-3d-wrap mx-auto">
 							<div class="card-3d-wrapper">
+								<form method="post" action="?c=login&a=LoginUser">
+								<?php include "config/errors.php" ?>
 								<div class="card-front">
 									<div class="center-wrap">
 										<div class="section text-center">
 											<h4 class="colortitle">Iniciar Sesión</h4>
 											<div class="form-group">
-												<input type="email" name="logemail" class="form-style" placeholder="Usuario" id="logusuario" autocomplete="off">
+												<input type="text" name="usuario_login" class="form-style" placeholder="Usuario" id="usuario_reg" autocomplete="off" value="<?php echo $data["userL"]; ?>">
 												<i class="input-icon uil uil-at"></i>
 											</div>	
 											<div class="form-group mt-2">
-												<input type="password" name="logpass" class="form-style" placeholder="Contraseña" id="logpass" autocomplete="off">
+												<input type="password" name="password_login" class="form-style" placeholder="Contraseña" id="password_reg" autocomplete="off">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a href="#" class="boton">Enviar</a>   		
+											<button  type="submit" name="login_user" class="boton">Enviar</button>   		
 				      					</div>
 			      					</div>
+								</form>
+								<form method="post" action="?c=login&a=RegisterUser">
+								<?php include "config/errors.php" ?>
 			      				</div>
-								<div class="card-back">
-									<div class="center-wrap">
-										<div class="section text-center">
-											<h4 class="colortitle">Registrarse</h4>
-												
-											<div class="form-group mt-2">
-												<input type="email" name="logemail" class="form-style" placeholder="Usuario" id="logusuario" autocomplete="off">
-												<i class="input-icon uil uil-at"></i>
-											</div>	
-											<div class="form-group mt-2">
-												<input type="password" name="logpass" class="form-style" placeholder="Contraseña" id="logpass" autocomplete="off">
-												<i class="input-icon uil uil-lock-alt"></i>
+									<div class="card-back">
+										<div class="center-wrap">
+											<div class="section text-center">
+												<h4 class="colortitle">Registrarse</h4>
+													
+												<div class="form-group mt-2">
+													<input type="text" name="usuario_reg" class="form-style" placeholder="Usuario" id="logusuario" autocomplete="off" value="<?php echo $data["userR"]; ?>">
+													<i class="input-icon uil uil-at"></i>
+												</div>	
+												<div class="form-group mt-2">
+													<input type="password" name="password_reg" class="form-style" placeholder="Contraseña" id="logpass" autocomplete="off">
+													<i class="input-icon uil uil-lock-alt"></i>
+												</div>
+												<button  type="submit" name="reg_user" class="boton">Register</button>
 											</div>
-											<a href="#" class="boton">Enviar</a>
-											
-				      					</div>
-			      					</div>
-			      				</div>
+										</div>
+									</div>
+									</form>
 			      			</div>
 			      		</div>
 			      	</div>
