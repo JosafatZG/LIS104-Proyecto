@@ -2,6 +2,13 @@
     max-width: 7cm;
     max-height: 4cm;
 }
+
+.container
+{
+    width: 100%;
+    margin: 0 auto;
+    padding: 6%;
+}
 .submit{
     background-color: #7B0D12;
     color: white;
@@ -96,13 +103,24 @@ body{
     position: absolute;
     right: 0%;
 }
-footer{
+
+
+
+  
+  footer {
+  
+  
     background-color: black;
     color: white;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
+    clear: both;
+    position: relative;
+    height: 90px;
+ 
+   
+
+   
+  }
+
 .logoinsta{
     margin-top: 0.2cm;
     max-width: 3cm;
@@ -127,5 +145,16 @@ footer{
     left:38%;
     font-family: Arial;
 }
+
+.categorias
+{
+width: 200px;
+float: left;
+left: 400px;
+margin: 2%;
+
+}
+
+
 
 
