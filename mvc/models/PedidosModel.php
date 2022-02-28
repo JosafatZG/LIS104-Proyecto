@@ -28,5 +28,13 @@
 			}
 			return $this->info;
         }
+
+        public function get_namecategoria($id){
+            $sql = "SELECT nombre FROM categorias WHERE id=$id LIMIT 1";
+            $resultado = $this->db->query($sql);
+			$nombre = $resultado->fetch_assoc();
+            $nombre = $nombre["nombre"];
+			return $nombre;
+        }
     }
 ?>

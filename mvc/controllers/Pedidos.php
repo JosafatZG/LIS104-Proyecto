@@ -14,9 +14,11 @@
 
             if(isset($id)){
                 $data["info"] = $categorias->get_productos($id);
+                $data["titulo"] = $categorias->get_namecategoria($id);
             }
             else{
                 $data["info"] = $categorias->get_categorias();
+                $data["titulo"] = "Categorias";
             }
             
             require_once "views/pedidos/categorias.php";
