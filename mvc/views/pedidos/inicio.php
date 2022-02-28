@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <!--<link rel="stylesheet" href="estilosindex.css">-->
-    <style><?php include "assets/css/estilosindex.css" ?></style>
+    <style><?php include "assets/css/estilosinicio.css" ?></style>
 </head>
 <body>
   
@@ -65,12 +65,16 @@
             <img src="assets/images/hamburguesa.png" class="hamburguesa">
         </section> 
     </div>
+
+     
     <footer>
-        <div>
-            <img src="assets/images/logoinsta.png" class="logoinsta"><p class="instagram">@volcanorestaurantsv</p>
-            <!--/<h2 class="instagram1">Síguenos en nuestro Instagram</h2>-->
-            <p class="derechos">&#169 2022 Volcano Restaurant, Todos los derechos reservados.</p>
-        </div>
-    </footer>
+                    <div>
+                        <img src="assets/images/logoinsta.png" class="logoinsta"><p class="instagram">@volcanorestaurantsv</p>
+                        <!--/<h2 class="instagram1">Síguenos en nuestro Instagram</h2>-->
+                        <p class="derechos">&#169 2022 Volcano Restaurant, Todos los derechos reservados.</p>
+                    </div>
+                </footer>
+
+
 </body>
 </html>
