@@ -70,10 +70,17 @@
 													<i class="input-icon uil uil-lock-alt"></i>
 												</div>
 												<button  type="submit" name="reg_user" class="boton">Register</button>
+												<button href="google.php" action="$_POST" name="reg_google_user" class="boton" value="
+												<?php
+													if(!isset($_SESSION['access_token'])) {
+														$login_button = '<a href="'.$google_client->createAuthUrl().'">Login With Google</a>';
+													}
+												?>"></button>
 											</div>
 										</div>
 									</div>
-									</form>
+								</form>
+								
 			      			</div>
 			      		</div>
 			      	</div>
