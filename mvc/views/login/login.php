@@ -70,7 +70,7 @@
 													<i class="input-icon uil uil-lock-alt"></i>
 												</div>
 												<button  type="submit" name="reg_user" class="boton">Register</button>
-												<button  action="$_POST" name="reg_google_user" class="boton" value="
+												
 												<?php
 													require_once "../vendor/autoload.php";
 
@@ -91,8 +91,11 @@
 													
 													$google_client->addScope('profile');
 
+													
+													//OPCION PARA PONER BOTON PERO NO FUNCIONA
+													//echo "<input class='boton' type='button' value='Google Login' onClick='window.location.href='".$google_client->createAuthUrl()."' '>";
 													echo "<a href='".$google_client->createAuthUrl()."'>Google Login</a>";
-												?>"></button>
+												?>
 											</div>
 										</div>
 									</div>
