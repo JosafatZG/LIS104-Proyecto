@@ -70,11 +70,28 @@
 													<i class="input-icon uil uil-lock-alt"></i>
 												</div>
 												<button  type="submit" name="reg_user" class="boton">Register</button>
-												<button href="google.php" action="$_POST" name="reg_google_user" class="boton" value="
+												<button  action="$_POST" name="reg_google_user" class="boton" value="
 												<?php
-													if(!isset($_SESSION['access_token'])) {
-														$login_button = '<a href="'.$google_client->createAuthUrl().'">Login With Google</a>';
-													}
+													require_once "../vendor/autoload.php";
+
+													//Make object of Google API Client for call Google API
+													$google_client = new Google_Client();
+													
+													//Set the OAuth 2.0 Client ID | Copiar "ID DE CLIENTE"
+													$google_client->setClientId('173569732989-i5j1glc19l09f2bq523b2jrrlpp12c6l.apps.googleusercontent.com');
+													
+													//Set the OAuth 2.0 Client Secret key
+													$google_client->setClientSecret('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');
+													
+													//Set the OAuth 2.0 Redirect URI | URL AUTORIZADO
+													$google_client->setRedirectUri('http://localhost/LIS104-Proyecto/mvc/index.php?c=pedidos');
+													
+													// to get the email and profile 
+													$google_client->addScope('email');
+													
+													$google_client->addScope('profile');
+
+													echo "<a href='".$google_client->createAuthUrl()."'>Google Login</a>";
 												?>"></button>
 											</div>
 										</div>
