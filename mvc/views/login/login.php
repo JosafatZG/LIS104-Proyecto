@@ -9,6 +9,7 @@
     <style><?php include "assets/css/estilos.css" ?></style>
     <title>Inicio/Registro</title>
 	<meta name="robots" content="noindex">
+	<meta name="google-signin-client_id" content="173569732989-i5j1glc19l09f2bq523b2jrrlpp12c6l.apps.googleusercontent.com">
 	<link  rel="icon"   href="https://imgur.com/Zdbcigj.png" type="image/png" />
 	<link rel="canonical" href="https://codepen.io/ig_design/pen/KKVQpVP?editors=1111">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
@@ -16,6 +17,7 @@
 	<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d0f3648046d2aaca07bd0037b9e061a26c74a8a999b75672ad6a638cca641472.js"></script>
 	<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
 	<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </head>
 <body class="Back" >
