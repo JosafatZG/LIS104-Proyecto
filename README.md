@@ -19,8 +19,11 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 
 # Autores
 >Gil Torres, Ana Jocelyn -> Diseño y Programación
+
 >Zavaleta, Josafat -> Diseño y Programación
+
 >Robles, Melvin -> Diseño y Programación
+
 >Alexis -> Diseño y Programación
 
 # Enlaces de Interes 
