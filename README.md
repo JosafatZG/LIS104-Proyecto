@@ -18,14 +18,15 @@ SinObraDerivada — Si remezcla, transforma o crea a partir del material, no pue
 No hay restricciones adicionales — No puede aplicar términos legales o medidas tecnológicas que legalmente restrinjan realizar aquello que la licencia permite.
 
 # Autores
->Gil Torres, Ana Jocelyn -> Diseño y Programación
+>Cornejo Hernández, Alexis Josué--> Scrum Team
 
->Zavaleta, Josafat -> Diseño y Programación
+>Gil Torres, Ana Jocelyn--> Scrum Team
 
->Robles, Melvin -> Diseño y Programación
+>Robles Rodas, Melvin Eduardo--> Scrum Team
 
->Alexis -> Diseño y Programación
+>Zavaleta Gallegos, Josafat Norberto--> Scrum Máster
 
 # Enlaces de Interes 
 >Tablero en Trello-->https://trello.com/b/0NpRgLOL/desarrollo-de-volcano-restaurant
->
+
+>Enlace a MockUps-->https://wireframepro.mockflow.com/view/M2Kll133wnb#/page/e07e4adf3c3442a088bfa8cd9cdae411
