@@ -7,7 +7,20 @@
     color: white;
     border-radius: 20px;
     border: none;
+    text-decoration: none;
 }
+
+.submitLog{
+
+    position: sticky;
+    background-color: #7B0D12;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+
+}
+
 .submit:hover{
     background-color: #a72963;
     cursor: pointer !important;

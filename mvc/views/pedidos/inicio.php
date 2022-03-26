@@ -57,7 +57,7 @@
             <input type="button" id="login" name="login" value="Iniciar Sesión" class="submit" onclick="location.href='?c=login';"/>
             <input type="image" src="assets/images/carrito.png" name="carrito" class="carrito" />
             <?php  if (isset($_SESSION['username'])) : ?>
-                <p><a href="index.php?logout='1'" class="submit" id="logout" name="logout" >Logout</a></p>
+                <p><a href="index.php?logout='1'" class="submitLog" id="logout" name="logout">Logout</a></p>
             <?php endif ?>
         </form>
     </header>
