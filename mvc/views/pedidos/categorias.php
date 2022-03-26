@@ -67,15 +67,93 @@
 						}
 			?>
                
-            <!--<img src="assets\images\0\1.png" class="categorias">
-            <img src="assets\images\0\2.png" class="categorias">
-            <img src="assets\images\0\3.png" class="categorias">
-            <img src="assets\images\0\1.png" class="categorias">
-            <img src="assets\images\0\2.png" class="categorias">
-            <img src="assets\images\0\3.png" class="categorias">-->
-            
-            
-            
+
+    <figure class="snip1361">
+    <img src="assets\images\0\1.png">
+    <figcaption>
+    <a href="#">Originals</a>
+    </figcaption>
+    </figure>
+
+    <figure class="snip1361">
+    <img src="assets\images\0\2.png">
+    <figcaption>
+    <a href="#">Novedades</a>
+    </figcaption>
+    </figure>
+
+    <figure class="snip1361">
+    <img src="assets\images\0\3.png">
+    <figcaption>
+    <a href="#">Menú Parrila</a>
+    </figcaption>
+    </figure>
+
+    <figure class="snip1361">
+    <img src="assets\images\0\4.png">
+    <figcaption>
+    <a href="#">Menú Pollo</a>
+    </figcaption>
+    </figure>
+
+    <figure class="snip1361">
+    <img src="assets\images\0\5.png">
+    <figcaption>
+    <a href="#">100% Vegetal</a>
+    </figcaption>
+    </figure>
+              
+    <figure class="snip1361">
+    <img src="assets\images\0\6.png">
+    <figcaption>
+    <a href="#">Entradas/Snaks</a>
+    </figcaption>
+    </figure>
+
+    <figure class="snip1361">
+    <img src="assets\images\0\7.png">
+    <figcaption>
+    <a href="#">Postres</a>
+    </figcaption>
+    </figure>
+
+    <figure class="snip1361">
+    <img src="assets\images\0\8.png">
+    <figcaption>
+    <a href="#">Postres</a>
+    </figcaption>
+    </figure>
+
+    <figure class="snip1361">
+    <img src="assets\images\0\9.png">
+    <figcaption>
+    <a href="#">Postres</a>
+    </figcaption>
+    </figure>
+
+    <figure class="snip1361">
+    <img src="assets\images\0\10.png">
+    <figcaption>
+    <a href="#">Postres</a>
+    </figcaption>
+    </figure>
+
+    <figure class="snip1361">
+    <img src="assets\images\0\11.png">
+    <figcaption>
+    <a href="#">Postres</a>
+    </figcaption>
+    </figure>
+
+    <figure class="snip1361">
+    <img src="assets\images\0\12.png">
+    <figcaption>
+    <a href="#">Postres</a>
+    </figcaption>
+    </figure>
+    
+                        
+          
         
 
         </div>
