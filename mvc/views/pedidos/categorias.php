@@ -19,7 +19,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
+    <title><?php echo $data["titulo"] ?></title>
     <!--<link rel="stylesheet" href="estilosindex.css">-->
     <style><?php include "assets/css/estiloscategoria.css" ?></style>
 </head>
@@ -54,13 +54,25 @@
          </form>
             </header>
             <div class="container">
-                 
-            <img src="assets\images\0\1.png" class="categorias">
+
+            <?php foreach($data["info"] as $dato) {
+                            $imprimir = "<img src=\"assets/images/".$dato["categoria"]."/".$dato["id"].".png\" ";
+                            $imprimir .= "alt='".$dato["nombre"]."' class='categorias' ";
+                            if($dato["categoria"] == 0)
+                                $imprimir .= "onclick=\"location.href='?c=pedidos&a=viewcategorias&id=".$dato["id"]."';\">";
+                            else
+                                $imprimir .=">";
+                            
+                            echo $imprimir;
+						}
+			?>
+               
+            <!--<img src="assets\images\0\1.png" class="categorias">
             <img src="assets\images\0\2.png" class="categorias">
             <img src="assets\images\0\3.png" class="categorias">
             <img src="assets\images\0\1.png" class="categorias">
             <img src="assets\images\0\2.png" class="categorias">
-            <img src="assets\images\0\3.png" class="categorias">
+            <img src="assets\images\0\3.png" class="categorias">-->
             
             
             

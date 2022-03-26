@@ -49,7 +49,7 @@
             <input type="button" id="inicio" name="inicio" value="Inicio" class="submit" onclick="location.href='?c=pedidos';" />
             <input type="button" id="categorias" name="categorias" value="Categorías" class="submit" onclick="location.href='?c=pedidos&a=viewcategorias';"/>
             <input type="button" id="login" name="login" value="Iniciar Sesión" class="submit" onclick="location.href='?c=login';"/>
-            <input type="image" src="assets/images/carrito.png" name="carrito" class="carrito"/>
+            <input type="image" src="assets/images/carrito.png" name="carrito" class="carrito" />
         </form>
     </header>
     <div>
