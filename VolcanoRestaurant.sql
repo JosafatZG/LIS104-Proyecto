@@ -205,8 +205,22 @@ INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (8, 'Hamburgu
 INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (9, 'Salsas', ' ', 0);
 INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (10, 'Sin gluten', ' ', 0);
 INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (11, 'Ensaladas', ' ', 0);
-INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (12, 'Bebidas y Cafés', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (12, 'Bebidas', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (13, 'Cafe', ' ', 0);
 
 INSERT INTO estado (id, descripcion) VALUES (4, 'Disponible');
+INSERT INTO estado (id, descripcion) VALUES (5, 'No Disponible');
 
 INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (1, 'Menú Originals Campesina (2 carnes)','',13.00,1,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (2, 'MENÚ QUEEN CHEESE DOBLE CRISPY CHICKEN','',9.70,2,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (3, 'MENÚ DOBLE CHEESE BURGER BBQ','',7.60,3,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (4, 'Menú Crispy Chicken','',7.60,4,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (5, 'LONG VEGETAL','',5.30,5,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (6, 'Dots de gouda','',2.95,6,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (7, 'Tarta Oreo','',2.80,7,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (8, 'LONG CHICKEN','',5.30,8,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (9, 'Salsa miel y mostaza','',0.60,9,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (10, 'Burger Sin Gluten','',3.10,10,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (11, 'ENSALADA ORIGINAL','',5.30,11,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (12, 'Coca-Cola','',2.30,12,4);
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (13, 'Cafe EXPRESSO','',1.30,13,4);
