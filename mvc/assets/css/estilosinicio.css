@@ -33,6 +33,13 @@
     position:relative;
     right:-175%;
 }
+#logout{
+    width: 170px;
+    height: 40px;
+    font-size:large;
+    position:absolute;
+    right:-175%;
+}
 .menu{
     position: absolute;
     top:5%;

@@ -30,3 +30,12 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 >Tablero en Trello-->https://trello.com/b/0NpRgLOL/desarrollo-de-volcano-restaurant
 
 >Enlace a MockUps-->https://wireframepro.mockflow.com/view/M2Kll133wnb#/page/e07e4adf3c3442a088bfa8cd9cdae411
+
+>Manual Tecnico en la nube-->
+
+>Manual de Usuario en la nube-->
+
+>Enlace de la Pagina Web-->
+
+>Enlace del video-->
+
