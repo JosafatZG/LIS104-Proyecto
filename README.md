@@ -22,22 +22,24 @@ SinObraDerivada — Si remezcla, transforma o crea a partir del material, no pue
 No hay restricciones adicionales — No puede aplicar términos legales o medidas tecnológicas que legalmente restrinjan realizar aquello que la licencia permite.
 
 # Autores
->Cornejo Hernández, Alexis Josué--> Scrum Team
+>Cornejo Hernández, Alexis Josué (03T)--> Scrum Team
 
->Gil Torres, Ana Jocelyn--> Scrum Team
+>Gil Torres, Ana Jocelyn (03T)--> Scrum Team
 
->Robles Rodas, Melvin Eduardo--> Scrum Team
+>Robles Rodas, Melvin Eduardo (03T)--> Scrum Team
 
->Zavaleta Gallegos, Josafat Norberto--> Scrum Máster
+>Zavaleta Gallegos, Josafat Norberto (03T)--> Scrum Máster
 
 # Enlaces de Interes 
 >Tablero en Trello-->https://trello.com/b/0NpRgLOL/desarrollo-de-volcano-restaurant
 
 >Enlace a MockUps-->https://wireframepro.mockflow.com/view/M2Kll133wnb#/page/e07e4adf3c3442a088bfa8cd9cdae411
 
->Manual Tecnico en la nube-->
+>Manual Tecnico en la nube-->https://drive.google.com/file/d/1sVWNiFi_0PVbx5OqGXaBj7ftTq2PxcPQ/view?usp=sharing
 
->Manual de Usuario en la nube-->
+>Manual de Usuario en la nube-->https://drive.google.com/file/d/15TqlenaqPscCPz93sYy51Nid6TbopfFW/view?usp=sharing
+
+>Documento Primera Fase-->https://drive.google.com/file/d/1DEbwVIiJDIKCS2LqO49hj3fp0ZLJCJtV/view?usp=sharing
 
 >Enlace del video-->
 
