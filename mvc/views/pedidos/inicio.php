@@ -53,6 +53,7 @@
         <img src="assets/images/logo.png" class="logo">
         <form class="menu">
             <input type="button" id="inicio" name="inicio" value="Inicio" class="submit" onclick="location.href='?c=pedidos';" />
+            <input type="button" id="login" name="login" value="Contactanos" class="submit" onclick="location.href='?c=pedidos&a=viewcontactanos';"/>
             <input type="button" id="categorias" name="categorias" value="Categorías" class="submit" onclick="location.href='?c=pedidos&a=viewcategorias';"/>
             <input type="button" id="login" name="login" value="Iniciar Sesión" class="submit" onclick="location.href='?c=login';"/>
             <input type="image" src="assets/images/carrito.png" name="carrito" class="carrito" />
