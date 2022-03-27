@@ -58,7 +58,7 @@
             <input type="button" id="login" name="login" value="Iniciar Sesión" class="submit" onclick="location.href='?c=login';"/>
             <input type="image" src="assets/images/carrito.png" name="carrito" class="carrito" />
             <?php  if (isset($_SESSION['username'])) : ?>
-                <p><a href="index.php?logout='1'" class="submit" id="logout" name="logout" >Logout</a></p>
+                <p><a href="index.php?logout='1'" class="submitLog" id="logout" name="logout">Logout</a></p>
             <?php endif ?>
         </form>
     </header>
@@ -78,13 +78,13 @@
 
      
     <footer>
-                    <div>
-                        <img src="assets/images/logoinsta.png" class="logoinsta"><p class="instagram">@volcanorestaurantsv</p>
-                        <!--/<h2 class="instagram1">Síguenos en nuestro Instagram</h2>-->
-                        <p class="derechos" ><img src="assets/images/license.png" > 2022 Volcano Restaurant, Todos los derechos reservados</p>
-                    </div>
-                </footer>
-
+        <div>
+            <img src="assets/images/logoinsta.png" class="logoinsta"><p class="instagram">@volcanorestaurantsv</p>
+            <!--/<h2 class="instagram1">Síguenos en nuestro Instagram</h2>-->
+            <p class="derechos" > 2022 Volcano Restaurant, Todos los derechos reservados</p>
+            <img src="assets/images/license.png" style="position:absolute;top:35%;left:85%;" >
+        </div>
+    </footer>
 
 </body>
 </html>

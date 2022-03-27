@@ -25,7 +25,7 @@
       </button>
       <ul class="nav-menu">
         <li class="nav-menu-item">
-          <a href="/index.html" class="nav-menu-link nav-link"><i class="fas fa-arrow-alt-circle-left"></i>Inicio</a>
+          <a href='?c=pedidos' class="nav-menu-link nav-link"><i class="fas fa-arrow-alt-circle-left"></i>Inicio</a>
         </li>
       </ul>
     </nav>
