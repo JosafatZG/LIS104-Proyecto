@@ -20,6 +20,10 @@
     cursor: pointer !important;
 }
 
+body{
+    overflow-x: hidden;
+ }
+
 #inicio{
     width: 100px;
     height: 40px;
