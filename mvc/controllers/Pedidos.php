@@ -27,5 +27,8 @@
         public function vieworden(){
             require_once "views/pedidos/orden.php";
         }
+        public function viewcontactanos(){
+            require_once "views/pedidos/contactanos.php";
+        }
     }
 ?>
