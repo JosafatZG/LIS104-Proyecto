@@ -18,7 +18,7 @@
     border-radius: 10px;
     text-decoration: none;
     padding: 7px;
-   margin-left: 250%;
+   margin-left: 200%;
 
 
 
@@ -42,12 +42,22 @@
     margin: 0.5cm;
     font-size: large;
 }
+
+#contactanos
+{
+    width: 110px;
+    height: 40px;
+    position:relative;
+    font-size: large;
+}
+
+
 #login{
     width: 170px;
     height: 40px;
     font-size:large;
     position:relative;
-    right:-175%;
+    right: -650px;
 }
 
 .menu{
@@ -61,7 +71,7 @@
     max-height: 2cm;
     position: absolute;
     top:13%;
-    right:-200%;
+    right:-750px;
 }
 .carrito:hover{
     background-color: blanchedalmond;
