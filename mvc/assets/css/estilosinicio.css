@@ -7,7 +7,23 @@
     color: white;
     border-radius: 20px;
     border: none;
+    text-decoration: none;
 }
+
+.submitLog{
+
+
+    background-color: #7B0D12;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 7px;
+   margin-left: 250%;
+
+
+
+}
+
 .submit:hover{
     background-color: #a72963;
     cursor: pointer !important;
@@ -33,13 +49,7 @@
     position:relative;
     right:-175%;
 }
-#logout{
-    width: 170px;
-    height: 40px;
-    font-size:large;
-    position:absolute;
-    right:-175%;
-}
+
 .menu{
     position: absolute;
     top:5%;
