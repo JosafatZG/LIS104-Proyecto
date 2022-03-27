@@ -53,11 +53,12 @@
         <img src="assets/images/logo.png" class="logo">
         <form class="menu">
             <input type="button" id="inicio" name="inicio" value="Inicio" class="submit" onclick="location.href='?c=pedidos';" />
+            <input type="button" id="login" name="login" value="Contactanos" class="submit" onclick="location.href='?c=pedidos&a=viewcontactanos';"/>
             <input type="button" id="categorias" name="categorias" value="Categorías" class="submit" onclick="location.href='?c=pedidos&a=viewcategorias';"/>
             <input type="button" id="login" name="login" value="Iniciar Sesión" class="submit" onclick="location.href='?c=login';"/>
             <input type="image" src="assets/images/carrito.png" name="carrito" class="carrito" />
             <?php  if (isset($_SESSION['username'])) : ?>
-                <p><a href="index.php?logout='1'" class="submit" id="logout" name="logout" >Logout</a></p>
+                <p><a href="index.php?logout='1'" class="submitLog" id="logout" name="logout">Logout</a></p>
             <?php endif ?>
         </form>
     </header>
@@ -77,7 +78,7 @@
 
      
     <footer>
-    <div>
+        <div>
                         <img src="assets/images/logoinsta.png" class="logoinsta"><p class="instagram">@volcanorestaurantsv</p>
                         <!--/<h2 class="instagram1">Síguenos en nuestro Instagram</h2>-->
                         <p class="derechos" > 2022 Volcano Restaurant, Todos los derechos reservados</p>
