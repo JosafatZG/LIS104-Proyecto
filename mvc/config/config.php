@@ -5,7 +5,7 @@
 	
 
 
-
+/*
 	//CONFIG PARA API DE INICIO DE SESION CON GOOGLE
 	//start session on web page
 	session_start();
@@ -30,6 +30,6 @@
 	$google_client->addScope('email');
 
 	$google_client->addScope('profile');
-
+*/
 
 ?>

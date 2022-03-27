@@ -60,6 +60,8 @@ DROP TABLE IF EXISTS `categorias`;
 CREATE TABLE IF NOT EXISTS `categorias` (
   `id` int(255) NOT NULL,
   `nombre` varchar(255) COLLATE utf16_spanish_ci NOT NULL,
+  `descripcion` text COLLATE utf16_spanish_ci NOT NULL,
+  `categoria` int(1) DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
 
@@ -189,3 +191,22 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- Ingresar datos
+
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (1, 'Originals', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (2, 'Novedades', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (3, 'Menú Parrilla', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (4, 'Menú Pollo', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (5, '100% Vegetal', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (6, 'Entrantes y Snacks', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (7, 'Postres', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (8, 'Hamburguesas', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (9, 'Salsas', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (10, 'Sin gluten', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (11, 'Ensaladas', ' ', 0);
+INSERT INTO categorias (id, nombre, descripcion, categoria) VALUES (12, 'Bebidas y Cafés', ' ', 0);
+
+INSERT INTO estado (id, descripcion) VALUES (4, 'Disponible');
+
+INSERT INTO PRODUCTO (id, nombre, descripcion, precio, categoria, estado) VALUES (1, 'Menú Originals Campesina (2 carnes)','',13.00,1,4);
