@@ -9,6 +9,7 @@
     <style><?php include "assets/css/estilos.css" ?></style>
     <title>Inicio/Registro</title>
 	<meta name="robots" content="noindex">
+	<meta name="google-signin-client_id" content="173569732989-i5j1glc19l09f2bq523b2jrrlpp12c6l.apps.googleusercontent.com">
 	<link  rel="icon"   href="https://imgur.com/Zdbcigj.png" type="image/png" />
 	<link rel="canonical" href="https://codepen.io/ig_design/pen/KKVQpVP?editors=1111">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
@@ -16,6 +17,7 @@
 	<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d0f3648046d2aaca07bd0037b9e061a26c74a8a999b75672ad6a638cca641472.js"></script>
 	<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
 	<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </head>
 <body class="Back" >
@@ -70,10 +72,37 @@
 													<i class="input-icon uil uil-lock-alt"></i>
 												</div>
 												<button  type="submit" name="reg_user" class="boton">Register</button>
+												
+												<?php
+													require_once "../vendor/autoload.php";
+
+													//Make object of Google API Client for call Google API
+													$google_client = new Google_Client();
+													
+													//Set the OAuth 2.0 Client ID | Copiar "ID DE CLIENTE"
+													$google_client->setClientId('173569732989-i5j1glc19l09f2bq523b2jrrlpp12c6l.apps.googleusercontent.com');
+													
+													//Set the OAuth 2.0 Client Secret key
+													$google_client->setClientSecret('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');
+													
+													//Set the OAuth 2.0 Redirect URI | URL AUTORIZADO
+													$google_client->setRedirectUri('http://localhost/LIS104-Proyecto/mvc/index.php?c=pedidos');
+													
+													// to get the email and profile 
+													$google_client->addScope('email');
+													
+													$google_client->addScope('profile');
+
+													
+													//OPCION PARA PONER BOTON PERO NO FUNCIONA
+													//echo "<input class='boton' type='button' value='Google Login' onClick='window.location.href='".$google_client->createAuthUrl()."' '>";
+													echo "<a href='".$google_client->createAuthUrl()."'>Google Login</a>";
+												?>
 											</div>
 										</div>
 									</div>
-									</form>
+								</form>
+								
 			      			</div>
 			      		</div>
 			      	</div>
