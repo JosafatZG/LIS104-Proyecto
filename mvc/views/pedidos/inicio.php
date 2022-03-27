@@ -29,8 +29,10 @@
   	<?php  if (isset($_SESSION['success'])) : ?>
       <div class="error success" >
       	<h3>
+            <script>
+                alertify.success('<?= $_SESSION['success']?>');
+            </script>
           <?php 
-          	echo $_SESSION['success']; 
           	unset($_SESSION['success']);
           ?>
       	</h3>
@@ -39,8 +41,9 @@
 
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+        <script>
+          alertify.success('<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>');
+        </script>
     <?php endif ?>
 
     <header>
@@ -50,6 +53,9 @@
             <input type="button" id="categorias" name="categorias" value="Categorías" class="submit" onclick="location.href='?c=pedidos&a=viewcategorias';"/>
             <input type="button" id="login" name="login" value="Iniciar Sesión" class="submit" onclick="location.href='?c=login';"/>
             <input type="image" src="assets/images/carrito.png" name="carrito" class="carrito" />
+            <?php  if (isset($_SESSION['username'])) : ?>
+                <p><a href="index.php?logout='1'" class="submit" id="logout" name="logout" >Logout</a></p>
+            <?php endif ?>
         </form>
     </header>
     <div>
@@ -71,7 +77,7 @@
                     <div>
                         <img src="assets/images/logoinsta.png" class="logoinsta"><p class="instagram">@volcanorestaurantsv</p>
                         <!--/<h2 class="instagram1">Síguenos en nuestro Instagram</h2>-->
-                        <p class="derechos">&#169 2022 Volcano Restaurant, Todos los derechos reservados.</p>
+                        <p class="derechos" ><img src="assets/images/license.png" > 2022 Volcano Restaurant, Todos los derechos reservados</p>
                     </div>
                 </footer>
 

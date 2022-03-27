@@ -85,7 +85,7 @@
                     <div>
                         <img src="assets/images/logoinsta.png" class="logoinsta"><p class="instagram">@volcanorestaurantsv</p>
                         <!--/<h2 class="instagram1">Síguenos en nuestro Instagram</h2>-->
-                        <p class="derechos">&#169 2022 Volcano Restaurant, Todos los derechos reservados.</p>
+                        <p class="derechos" ><img src="assets/images/license.png" > 2022 Volcano Restaurant, Todos los derechos reservados</p>
                     </div>
                 </footer>
     
