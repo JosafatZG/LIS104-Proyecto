@@ -3,9 +3,13 @@ Este proyecto consiste en una página web del Restaurante Volcano, donde se mues
 
 # Herramientas
 >Visual Studio Code
+
 >Wampserver/Xampp
+
 >API de Google
+
 >GitHub
+
 >Trello
 
 # Licencia
@@ -34,8 +38,6 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 >Manual Tecnico en la nube-->
 
 >Manual de Usuario en la nube-->
-
->Enlace de la Pagina Web-->
 
 >Enlace del video-->
 
