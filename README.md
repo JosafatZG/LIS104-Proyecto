@@ -1,11 +1,9 @@
-<<<<<<< Updated upstream
-# LIS104-Proyecto
-=======
 # LIS104-Proyecto
 Este proyecto consiste en una página web del Restaurante Volcano, donde se muestran las categorías de los productos que se ofrecen para que el usuario pueda hacer su pedido al añadirlo al carrito, para poder realizar el pedido necesita registrarse ya sea por medio de sus credenciales de Google o creando su propio usuario y contraseña, una vez registrado va a poder ver los detalles de su pedido 
 
 # Herramientas
 >Visual Studio Code
+>Wampserver/Xampp
 >API de Google
 >GitHub
 >Trello
@@ -41,4 +39,3 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 
 >Enlace del video-->
 
->>>>>>> Stashed changes
