@@ -12,6 +12,7 @@
 	
 	<body>
 
+
 	<header>
    
 
@@ -36,6 +37,7 @@
     </header>
 
 
+
 		<div class="container">		
 			
 			<a onclick="location.href='?c=pedidos&a=viewordencombo';" class="btn btn-primary">Agregar</a>
@@ -52,4 +54,6 @@
 					</thead>
 				</table>
 	</body>
-</html
+
+      </html>
+

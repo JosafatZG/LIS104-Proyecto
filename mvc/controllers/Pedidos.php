@@ -30,5 +30,14 @@
         public function viewcontactanos(){
             require_once "views/pedidos/contactanos.php";
         }
+        public function viewordencombo(){
+
+            $productos = new Pedidos_model();
+
+            $data["info"] = $productos->get_productosorden();
+
+            require_once "views/pedidos/ordencombo.php";
+        }
+
     }
 ?>
