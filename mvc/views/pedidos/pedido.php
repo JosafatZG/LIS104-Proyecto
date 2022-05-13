@@ -52,9 +52,9 @@
 							<th>Precio</th>
 						</tr>
 					</thead>
-                    <tbody>
+                    <tbody >
                         <?php foreach($data["info"] as $dato):?>
-                        <tr>
+                        <tr >
                             <th><?php echo $dato["nombre"]?></th>
                             <th><?php echo $dato["precio"]?></th>
                         </tr>
