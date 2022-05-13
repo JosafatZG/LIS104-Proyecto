@@ -68,19 +68,6 @@ CREATE TABLE IF NOT EXISTS `categorias` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `extras`
---
-
-DROP TABLE IF EXISTS `extras`;
-CREATE TABLE IF NOT EXISTS `extras` (
-  `id` int(255) NOT NULL,
-  `nombre` varchar(255) COLLATE utf16_spanish_ci NOT NULL,
-  `precio` decimal(65,2) NOT NULL,
-  `estado` int(255) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `estado` (`estado`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
-
 -- --------------------------------------------------------
 
 --
@@ -91,10 +78,8 @@ DROP TABLE IF EXISTS `orden`;
 CREATE TABLE IF NOT EXISTS `orden` (
   `id` int(255) NOT NULL,
   `producto` int(255) NOT NULL,
-  `extras` int(255) NOT NULL,
   KEY `orden_ibfk_1` (`id`),
-  KEY `orden_ibfk_2` (`producto`),
-  KEY `orden_ibfk_3` (`extras`)
+  KEY `orden_ibfk_2` (`producto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
 
 -- --------------------------------------------------------
@@ -137,34 +122,18 @@ CREATE TABLE IF NOT EXISTS `producto` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `productoxextras`
---
-
-DROP TABLE IF EXISTS `productoxextras`;
-CREATE TABLE IF NOT EXISTS `productoxextras` (
-  `idproducto` int(255) NOT NULL,
-  `idextras` int(255) NOT NULL,
-  KEY `idproducto` (`idproducto`),
-  KEY `idextras` (`idextras`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
-
 --
 -- Restricciones para tablas volcadas
 --
 
 --
--- Filtros para la tabla `extras`
---
-ALTER TABLE `extras`
-  ADD CONSTRAINT `extras_ibfk_1` FOREIGN KEY (`estado`) REFERENCES `estado` (`id`);
-
 --
 -- Filtros para la tabla `orden`
 --
 ALTER TABLE `orden`
   ADD CONSTRAINT `orden_ibfk_1` FOREIGN KEY (`id`) REFERENCES `pedido` (`id`),
-  ADD CONSTRAINT `orden_ibfk_2` FOREIGN KEY (`producto`) REFERENCES `producto` (`id`),
-  ADD CONSTRAINT `orden_ibfk_3` FOREIGN KEY (`extras`) REFERENCES `extras` (`id`);
+  ADD CONSTRAINT `orden_ibfk_2` FOREIGN KEY (`producto`) REFERENCES `producto` (`id`);
+
 
 --
 -- Filtros para la tabla `pedido`
@@ -179,13 +148,6 @@ ALTER TABLE `pedido`
 ALTER TABLE `producto`
   ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`estado`) REFERENCES `estado` (`id`),
   ADD CONSTRAINT `producto_ibfk_2` FOREIGN KEY (`categoria`) REFERENCES `categorias` (`id`);
-
---
--- Filtros para la tabla `productoxextras`
---
-ALTER TABLE `productoxextras`
-  ADD CONSTRAINT `productoxextras_ibfk_1` FOREIGN KEY (`idproducto`) REFERENCES `producto` (`id`),
-  ADD CONSTRAINT `productoxextras_ibfk_2` FOREIGN KEY (`idextras`) REFERENCES `extras` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
