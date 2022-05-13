@@ -45,7 +45,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  onclick="location.href='?c=pedidos&a=viewpedido&id=1';"/>
 		</div>
 
 		<!-- CATEGORIA NOVEDADES -->
@@ -58,7 +58,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  onclick="location.href='?c=pedidos&a=viewpedido&id=5';"/>
 		</div>
 
 		<!-- CATEGORIA MENU PARRILLA -->
@@ -71,7 +71,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary" onclick="location.href='?c=pedidos&a=viewpedido&id=9';" />
 		</div>
 
 		<!-- CATEGORIA MENU POLLO -->
@@ -84,7 +84,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary" onclick="location.href='?c=pedidos&a=viewpedido&id=13';" />
 		</div>
 
 		<!-- CATEGORIA 100% VEGETAL -->
@@ -97,7 +97,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary" onclick="location.href='?c=pedidos&a=viewpedido&id=17';"/>
 		</div>
 
 		<!-- CATEGORIA SNACKS -->
@@ -110,7 +110,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary" onclick="location.href='?c=pedidos&a=viewpedido&id=21';" />
 		</div>
 
 		<!-- CATEGORIA POSTRES -->
@@ -123,7 +123,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary" onclick="location.href='?c=pedidos&a=viewpedido&id=25';" />
 		</div>
 
 		<!-- CATEGORIA HAMBURGUESAS -->
@@ -136,7 +136,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  onclick="location.href='?c=pedidos&a=viewpedido&id=29';"/>
 		</div>
 
 		<!-- CATEGORIA SALSAS -->
@@ -149,7 +149,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  onclick="location.href='?c=pedidos&a=viewpedido&id=33';"/>
 		</div>
 
 		<!-- CATEGORIA SIN GLUTEN -->
@@ -162,7 +162,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  onclick="location.href='?c=pedidos&a=viewpedido&id=37';"/>
 		</div>
 
 		<!-- CATEGORIA ENSALADAS -->
@@ -175,7 +175,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  onclick="location.href='?c=pedidos&a=viewpedido&id=41';"/>
 		</div>
 
 		<!-- CATEGORIA BEBIDAS -->
@@ -188,7 +188,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="bebidas" name="btnbebidas" value="Agregar" class="btn btn-primary" onclick="location.href='?c=pedidos&a=viewpedido';" />
+		<input type="button" id="bebidas" name="btnbebidas" value="Agregar" class="btn btn-primary" onclick="location.href='?c=pedidos&a=viewpedido&id=44';" />
 		</div>
 
 		<!-- CATEGORIA CAFÉ -->
@@ -201,7 +201,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="" name="" value="Agregar" class="btn btn-primary"  onclick="location.href='?c=pedidos&a=viewpedido&id=48';"/>
 		</div>
 
 	</body>

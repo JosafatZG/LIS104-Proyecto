@@ -58,5 +58,16 @@
 			}
 			return $this->info;
         }
+
+        public function get_productosod($id){
+
+            $sql = "SELECT * FROM producto WHERE id='$id'";
+            $resultado = $this->db->query($sql);
+			while($row = $resultado->fetch_assoc())
+			{
+				$this->info[] = $row;
+			}
+			return $this->info;
+        }
     }
 ?>

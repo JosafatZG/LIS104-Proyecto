@@ -28,11 +28,11 @@
             require_once "views/pedidos/orden.php";
         }
 
-        public function viewpedido(){
+        public function viewpedido($id = null){
 
             $productos = new Pedidos_model();
 
-            $data["info"] = $productos->get_productosor();
+            $data["info"] = $productos->get_productosod($id);
 
             require_once "views/pedidos/pedido.php";
         }
@@ -47,6 +47,15 @@
             $data["info"] = $productos->get_productosorden();
 
             require_once "views/pedidos/ordencombo.php";
+        }
+
+        public function viewpedido2(){
+
+            $productos = new Pedidos_model();
+
+            $data["info"] = $productos->get_productosor2();
+
+            require_once "views/pedidos/pedido2.php";
         }
 
 
