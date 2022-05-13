@@ -47,5 +47,16 @@
 			}
 			return $this->info;
         }
+
+        public function get_productosor(){
+
+            $sql = "SELECT * FROM producto WHERE id='46'";
+            $resultado = $this->db->query($sql);
+			while($row = $resultado->fetch_assoc())
+			{
+				$this->info[] = $row;
+			}
+			return $this->info;
+        }
     }
 ?>

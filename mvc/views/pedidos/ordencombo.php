@@ -188,7 +188,7 @@
 		<?php }
 		endforeach?>
 		</select>
-		<input type="button" id="bebidas" name="btnbebidas" value="Agregar" class="btn btn-primary"  />
+		<input type="button" id="bebidas" name="btnbebidas" value="Agregar" class="btn btn-primary" onclick="location.href='?c=pedidos&a=viewpedido';" />
 		</div>
 
 		<!-- CATEGORIA CAFÉ -->

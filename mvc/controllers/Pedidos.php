@@ -27,9 +27,19 @@
         public function vieworden(){
             require_once "views/pedidos/orden.php";
         }
+
+        public function viewpedido(){
+
+            $productos = new Pedidos_model();
+
+            $data["info"] = $productos->get_productosor();
+
+            require_once "views/pedidos/pedido.php";
+        }
         public function viewcontactanos(){
             require_once "views/pedidos/contactanos.php";
         }
+
         public function viewordencombo(){
 
             $productos = new Pedidos_model();
@@ -38,6 +48,7 @@
 
             require_once "views/pedidos/ordencombo.php";
         }
+
 
     }
 ?>
