@@ -11,20 +11,28 @@
 	</head>
 	
 	<body>
-		<div class="container">		
-			
-			<a onclick="location.href='?c=pedidos&a=viewordencombo';" class="btn btn-primary">Agregar</a>
-			
-			<br />
-			<br />
-			<div class="table-responsive">
-				<table width="80%" class="table">
-					<thead>
-						<tr class="table-primary">
-							<th>Productos</th>
-							<th>Precio</th>
-						</tr>
-					</thead>
-				</table>
+
+  <!-- CATEGORIA ORIGINALS -->
+<div class="combo">
+<Label>Categoria: Originals</Label>	
+<select name="" >
+
+<option value="">
+
+</option>
+</select>
+</div>
+
+  <!-- CATEGORIA NOVEDADES -->
+<div class="combo">
+<Label>Categoria: Novedades</Label>	
+<select name="" >
+
+<option value="">
+
+</option>
+</select>
+</div>
+
 	</body>
-</html
+</html>
