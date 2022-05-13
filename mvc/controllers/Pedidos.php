@@ -30,5 +30,8 @@
         public function viewcontactanos(){
             require_once "views/pedidos/contactanos.php";
         }
+        public function viewordencombo(){
+            require_once "views/pedidos/ordencombo.php";
+        }
     }
 ?>

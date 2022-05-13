@@ -47,6 +47,8 @@
 
 }
 
+
+
 body{
     overflow-x: hidden;
  }
@@ -193,6 +195,23 @@ body{
 {
     filter: drop-shadow(0 0 1px #7b0d12);
     transition: all 0.5s;
+}
+
+.combo
+{
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 200px;
+    width: 100%;
+   
+    text-align: left;
+    line-height: 1.4em;
+    color: white;
+    float: left !important;
+  
 }
 
 
