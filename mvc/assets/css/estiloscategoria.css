@@ -20,8 +20,12 @@
     cursor: pointer !important;
 }
 
-.submitLog a {
+.ini
+{
+    left: 600px;
+}
 
+.submitLog a {
 
     background-color: #7B0D12;
     color: white;
@@ -201,13 +205,16 @@ body{
 {
     font-family: 'Quattrocento', Arial, sans-serif;
     position: relative;
+
+    overflow: hidden;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 200px;
+    width: 100%;
     margin: 15px;
     padding: 5px;
     border-radius: 10px;
     background: linear-gradient(65deg, orange, yellow);
-
-
-
     border: #141414 solid;
     text-align: left;
     color: black;
