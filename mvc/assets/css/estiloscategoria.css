@@ -116,17 +116,17 @@ body{
   
     background-color: black;
     color: white;
-    clear: both;
-    position: relative;
+    position: absolute;
+    min-width: 100%;
     height: 120px;
- 
+    bottom: 0;
    
 
    
   }
 
 .logoinsta{
-    margin-top: 0.2cm;
+    margin-top: 0.9cm;
     max-width: 3cm;
     max-height: 1.5cm;
     margin-left: 2cm;
@@ -151,7 +151,22 @@ body{
     font-family: Arial;
 }
 
+.title-cate h1{
 
+    position: absolute;
+    left: 45%;
+    top: 8%;
+    font-family: Arial;
+    transition: all 0.5s;
+
+   
+}
+
+.title-cate h1:hover
+{
+    filter: drop-shadow(0 0 1px #7b0d12);
+    transition: all 0.5s;
+}
 
 
 /*Imagenes de categorias*/
@@ -198,8 +213,8 @@ body{
   left: 0;
   width: 100%;
   height: 50px;
-  background-image: -webkit-linear-gradient(top, transparent 20%, #f8d585 120%);
-  background-image: linear-gradient(to bottom, transparent 20%, #f8d585 120%);
+  background-image: -webkit-linear-gradient(top, transparent 20%, #f8d585 130%);
+  background-image: linear-gradient(to bottom, transparent 20%, #f8d585 130%);
 }
 
 

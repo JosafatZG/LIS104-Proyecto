@@ -52,18 +52,34 @@
             <input type="button" id="login" name="login" value="Iniciar Sesión" class="submit" onclick="location.href='?c=login';"/>
             <input type="image" src="assets/images/carrito.png" name="carrito" class="carrito"/>
          </form>
+         <div class="title-cate">
+            <h1><?php echo $data["titulo"] ?></h1>
+         </div>
+         
     </header>
+
+
+
         <div class="container">
+
+
 
             <?php foreach($data["info"] as $dato) {
                 echo '<figure class="snip1361">';
                 echo "<img src=\"assets/images/".$dato["categoria"]."/".$dato["id"].".png\" alt='".$dato["nombre"]."' >";
                 echo '<figcaption>';
+                
 
                 if($dato["categoria"] == 0)
+                {
                     echo "<a href='?c=pedidos&a=viewcategorias&id=".$dato["id"]."'>".$dato["nombre"]."</a>";
+
+                }
                 else
+                {
                     echo "<a href='#'>".$dato["nombre"]."</a>";
+                }
+                   
 
                 echo '</figcaption>';
                 echo '</figure>';
