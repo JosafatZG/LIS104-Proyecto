@@ -38,32 +38,56 @@
       </div>
   	<?php endif ?>
 
-    <!-- logged in user information -->
-    <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
-    <?php endif ?>
+
 
     <header>
+   
+
         <img src="assets/images/logo.png" class="logo">
         <form class="menu">
             <input type="button" id="inicio" name="inicio" value="Inicio" class="submit" onclick="location.href='?c=pedidos';" />
             <input type="button" id="categorias" name="categorias" value="Categorías" class="submit" onclick="location.href='?c=pedidos&a=viewcategorias';"/>
+            <input type="button" id="categorias" name="categorias" value="Orden" class="submit" onclick="location.href='?c=pedidos&a=vieworden';"/>
             <input type="button" id="login" name="login" value="Iniciar Sesión" class="submit" onclick="location.href='?c=login';"/>
             <input type="image" src="assets/images/carrito.png" name="carrito" class="carrito"/>
+
+             <!-- logged in user information -->
+    <?php  if (isset($_SESSION['username'])) : ?>
+        <div class="submitLog">
+    	<p>Bienvenid@ <strong><?php echo $_SESSION['username']; ?></strong></p>
+    	<p> <a href="index.php?logout='1'" id="logout" name="logout">logout</a> </p>
+        </div>
+    <?php endif ?>
+
          </form>
+         <div class="title-cate">
+            <h1><?php echo $data["titulo"] ?></h1>
+         </div>
+         
     </header>
+
+
+
         <div class="container">
+
+
 
             <?php foreach($data["info"] as $dato) {
                 echo '<figure class="snip1361">';
                 echo "<img src=\"assets/images/".$dato["categoria"]."/".$dato["id"].".png\" alt='".$dato["nombre"]."' >";
                 echo '<figcaption>';
+                
 
                 if($dato["categoria"] == 0)
+                {
                     echo "<a href='?c=pedidos&a=viewcategorias&id=".$dato["id"]."'>".$dato["nombre"]."</a>";
+
+                }
                 else
+                {
                     echo "<a href='#'>".$dato["nombre"]."</a>";
+                }
+                   
 
                 echo '</figcaption>';
                 echo '</figure>';

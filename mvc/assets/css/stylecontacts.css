@@ -14,10 +14,11 @@
 body {
   font-family: sans-serif;
   padding: 90px 20px 0;
+  background-color: #7b0d12;
 }
 
 .header {
-  background-color: rgb(201, 195, 187);
+  background-color: #c9c3bb;
   height: 80px;
   position: fixed;
   width: 100%;
@@ -63,6 +64,7 @@ body {
 .nav-menu-link {
   padding: 8px 12px;
   border-radius: 3px;
+  color: black;
 }
 
 .nav-menu-link:hover,
@@ -80,7 +82,6 @@ body {
   padding: 0 20px;
   line-height: 60px;
   cursor: pointer;
-
   display: none;
 }
 .fa-arrow-alt-circle-left
@@ -95,6 +96,7 @@ body {
 
   .header {
     height: 60px;
+    
   }
 
   .logo {
@@ -112,7 +114,6 @@ body {
     top: 60px;
     width: 100%;
     padding: 20px 0;
-
     height: calc(100% - 60px);
     overflow-y: auto;
 
@@ -145,11 +146,12 @@ body {
 form{
   width: 450px;
   margin: auto;
-  background: #FEF1E6;
+  background: #2a2b38;
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 20px;
   border-radius: 10px;
+
 }
 h2{
 color: #FFB085;
