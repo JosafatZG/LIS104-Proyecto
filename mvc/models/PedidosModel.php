@@ -36,5 +36,16 @@
             $nombre = $nombre["nombre"];
 			return $nombre;
         }
+
+        public function get_productosorden(){
+
+            $sql = "SELECT * FROM producto";
+            $resultado = $this->db->query($sql);
+			while($row = $resultado->fetch_assoc())
+			{              
+				$this->info[] = $row;
+			}
+			return $this->info;
+        }
     }
 ?>
